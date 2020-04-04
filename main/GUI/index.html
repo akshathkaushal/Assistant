@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello from electron</title>
+    <script src="main.js"></script>
+    <script src="python.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert.css">
+    
 </head>
 <body>
+    
     <h1>Hello,</h1>
     <h3>This is the starting of the coolest project I have ever made!</h3> 
+    <button type="button" class="hello" onclick="greet()">say</button>
     <script>
-        require('./index.js')
-    </script>  
+        require('./python.js')
+    </script>
 </body>
 </html>

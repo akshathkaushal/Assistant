@@ -22,9 +22,11 @@ function launch() {
     win.on('close', () => {
         win = null;
     });
+
+    //win.webContents.openDevTools()
 }
 
-app.on('ready', launch);
+app.on("ready", launch);
 
 app.on('window-all-closed', () => {
     if(process.platform != 'darwin') {
