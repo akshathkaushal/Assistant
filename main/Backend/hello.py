@@ -1,1 +1,1 @@
-print("This Python file has been successfully integrated with ElectronJS")
+print("Python has been successfully integrated with ElectronJS")

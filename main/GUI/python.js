@@ -3,8 +3,7 @@ function greet() {
     let { PythonShell } = require("python-shell");
     var path = require('path');
     var options = {
-        scriptPath: path.join(__dirname, '/../'),
-        pythonPath: '/usr/bin/python3'
+        scriptPath: path.join(__dirname, '/../')
     }
 
     var start = new PythonShell('/Backend/hello.py', options)
