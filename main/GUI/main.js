@@ -3,6 +3,8 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const path = require('path');
 const url = require('url');
+//const Tray = electron.Tray;
+//const iconPath = path.join(__dirname, '/icons/name.jpg');
 
 let win;
 
@@ -27,6 +29,10 @@ function launch() {
 }
 
 app.on("ready", launch);
+
+/*app.on('ready', function(){
+    new Tray(iconPath)
+});*/
 
 app.on('window-all-closed', () => {
     if(process.platform != 'darwin') {

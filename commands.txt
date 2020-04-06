@@ -1,0 +1,4 @@
+sudo apt install nodejs
+sudo apt install npm
+npm install electron --save-dev
+npm install python-shell
